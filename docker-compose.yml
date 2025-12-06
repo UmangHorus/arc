@@ -1,0 +1,10 @@
+services:
+  nextjs:
+    build: .
+    image: officeexpress-nextjs:latest
+    restart: unless-stopped
+    ports:
+      - "3001:3000" # expose container ports 3000 on host port 3001
+    environment:
+      - NODE_ENV=production
+      - PORT=3000

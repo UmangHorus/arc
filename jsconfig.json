@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@stores/*": ["./src/stores/*"]
+    },
+    "checkJs": false,
+    "allowJs": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "types": [],
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src/**/*", "next-env.d.ts"],
+  "exclude": ["node_modules", ".next", "out", "dist"]
+}
